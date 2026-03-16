@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zirki IT Group | Secure Systems Engineering</title>
+    <meta name="description" content="Technical studio specializing in full-stack development, AI automation, and cybersecurity.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        zinc: {
+                            950: '#09090b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #000; color: #fff; scroll-behavior: smooth; }
+        .border-subtle { border-color: rgba(255, 255, 255, 0.1); }
+        .grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .nav-blur { background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(12px); }
+        .hover-invert:hover { background: #fff; color: #000; }
+        .transition-standard { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        
+        /* Custom scrollbar for minimalist feel */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #333; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed top-0 w-full z-50 border-b border-subtle nav-blur">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3 group cursor-pointer">
+                <div class="w-7 h-7 border-2 border-white flex items-center justify-center transition-standard group-hover:rotate-90">
+                    <div class="w-2 h-2 bg-white"></div>
+                </div>
+                <span class="font-display font-bold text-xl tracking-tighter uppercase">ZIRKI <span class="text-zinc-500">GROUP</span></span>
+            </div>
+            
+            <div class="hidden lg:flex items-center gap-10 text-[10px] uppercase tracking-[0.3em] font-semibold text-zinc-400">
+                <a href="#services" class="hover:text-white transition-standard">Services</a>
+                <a href="#solutions" class="hover:text-white transition-standard">Solutions</a>
+                <a href="#security" class="hover:text-white transition-standard">Security</a>
+                <a href="#about" class="hover:text-white transition-standard">About</a>
+                <a href="#contact" class="px-6 py-2 border border-white text-white hover:bg-white hover:text-black transition-standard">Contact</a>
+            </div>
+
+            <button class="lg:hidden text-white"><i data-lucide="menu"></i></button>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center grid-pattern pt-20">
+        <div class="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-9 space-y-12">
+                <div class="inline-block px-4 py-1 border border-zinc-800 text-[10px] tracking-[0.4em] uppercase text-zinc-500 font-bold">
+                    Est. 2026 // Technical Excellence
+                </div>
+                <h1 class="font-display text-6xl md:text-[100px] font-bold leading-[0.85] tracking-tighter">
+                    BUILDING <br> <span class="italic font-light">RESILIENT</span> <br> DIGITAL LOGIC.
+                </h1>
+                <p class="text-zinc-400 text-lg md:text-2xl max-w-3xl leading-relaxed font-light">
+                    Zirki IT Group designs, automates, and secures high-performance systems. We integrate full-stack engineering with AI logic and offensive security testing.
+                </p>
+                <div class="flex flex-wrap gap-6 pt-4">
+                    <a href="#contact" class="px-12 py-5 bg-white text-black font-display font-bold uppercase tracking-widest text-xs transition-standard hover:bg-zinc-200">
+                        Book Consultation
+                    </a>
+                    <a href="#services" class="px-12 py-5 border border-zinc-700 text-white font-display font-bold uppercase tracking-widest text-xs transition-standard hover:border-white">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute right-10 bottom-20 hidden xl:block">
+            <div class="rotate-90 origin-right text-[10px] tracking-[1em] text-zinc-700 uppercase font-bold">
+                Secure. Automate. Scale.
+            </div>
+        </div>
+    </section>
+
+    <div class="border-y border-subtle py-12 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
+                <div>
+                    <div class="text-zinc-600 text-[10px] uppercase tracking-widest mb-2 font-bold">Niche 01</div>
+                    <div class="font-display font-bold text-sm uppercase">Full-Stack Platforms</div>
+                </div>
+                <div>
+                    <div class="text-zinc-600 text-[10px] uppercase tracking-widest mb-2 font-bold">Niche 02</div>
+                    <div class="font-display font-bold text-sm uppercase">AI Business Nodes</div>
+                </div>
+                <div>
+                    <div class="text-zinc-600 text-[10px] uppercase tracking-widest mb-2 font-bold">Niche 03</div>
+                    <div class="font-display font-bold text-sm uppercase">Cybersecurity Labs</div>
+                </div>
+                <div>
+                    <div class="text-zinc-600 text-[10px] uppercase tracking-widest mb-2 font-bold">Niche 04</div>
+                    <div class="font-display font-bold text-sm uppercase">Systems Testing</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="services" class="py-32 border-b border-subtle bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+                <h2 class="font-display text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-none">
+                    Services built <br> for <span class="text-zinc-600 italic">integrity.</span>
+                </h2>
+                <p class="text-zinc-500 max-w-sm text-sm uppercase tracking-widest leading-loose">
+                    We solve complex business problems with clean code and hardened security protocols.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-1">
+                <div class="group border border-zinc-800 p-12 hover:bg-white transition-all duration-500">
+                    <span class="text-zinc-700 font-display font-bold text-4xl block mb-12 group-hover:text-black">01</span>
+                    <h3 class="font-display text-2xl font-bold uppercase mb-6 group-hover:text-black">Development</h3>
+                    <ul class="space-y-4 text-zinc-500 text-xs uppercase tracking-widest group-hover:text-zinc-600">
+                        <li>Web Platforms</li>
+                        <li>Custom Dashboards</li>
+                        <li>Admin Systems</li>
+                        <li>Scalable APIs</li>
+                    </ul>
+                </div>
+
+                <div class="group border border-zinc-800 p-12 hover:bg-white transition-all duration-500">
+                    <span class="text-zinc-700 font-display font-bold text-4xl block mb-12 group-hover:text-black">02</span>
+                    <h3 class="font-display text-2xl font-bold uppercase mb-6 group-hover:text-black">Intelligence</h3>
+                    <ul class="space-y-4 text-zinc-500 text-xs uppercase tracking-widest group-hover:text-zinc-600">
+                        <li>AI Workflow Integration</li>
+                        <li>Automation Agents</li>
+                        <li>Document Processing</li>
+                        <li>Customer Support AI</li>
+                    </ul>
+                </div>
+
+                <div class="group border border-zinc-800 p-12 hover:bg-white transition-all duration-500">
+                    <span class="text-zinc-700 font-display font-bold text-4xl block mb-12 group-hover:text-black">03</span>
+                    <h3 class="font-display text-2xl font-bold uppercase mb-6 group-hover:text-black">Security</h3>
+                    <ul class="space-y-4 text-zinc-500 text-xs uppercase tracking-widest group-hover:text-zinc-600">
+                        <li>Vulnerability Reviews</li>
+                        <li>Systems Hardening</li>
+                        <li>Offensive Testing</li>
+                        <li>Antivirus Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="py-32 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-24">
+                <div class="space-y-12">
+                    <h2 class="font-display text-4xl font-bold uppercase tracking-tighter">Why businesses <br> choose Zirki IT Group</h2>
+                    <div class="space-y-10">
+                        <div class="flex gap-8">
+                            <span class="font-bold text-zinc-800">/A</span>
+                            <div>
+                                <h4 class="font-display font-bold uppercase mb-2">Security-First Mindset</h4>
+                                <p class="text-zinc-500 text-sm leading-relaxed">We build with the assumption that every system will be tested. Security is baked into the initial architecture, not added later.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8">
+                            <span class="font-bold text-zinc-800">/B</span>
+                            <div>
+                                <h4 class="font-display font-bold uppercase mb-2">Automated Efficiency</h4>
+                                <p class="text-zinc-500 text-sm leading-relaxed">We don't just build websites; we build engines. AI integration allows your business to scale without increasing overhead.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-zinc-800 p-12 bg-zinc-950 flex flex-col justify-center text-center">
+                    <i data-lucide="shield-check" class="w-16 h-16 mx-auto mb-8 text-white opacity-20"></i>
+                    <h3 class="font-display text-3xl font-bold uppercase mb-6">Need a Secure Audit?</h3>
+                    <p class="text-zinc-500 mb-10">Protect your assets before launching. We provide high-level technical hardening for enterprise platforms.</p>
+                    <button class="w-full py-4 border border-white uppercase text-[10px] tracking-[0.3em] font-bold hover:bg-white hover:text-black transition-standard">Request System Hardening</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="security" class="py-40 border-y border-subtle grid-pattern">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto space-y-12">
+                <h2 class="font-display text-5xl md:text-7xl font-bold uppercase leading-tight">Security is part of <span class="text-zinc-700 italic">how we build.</span></h2>
+                <div class="h-px w-24 bg-white mx-auto"></div>
+                <p class="text-zinc-400 text-lg leading-relaxed uppercase tracking-widest text-sm">
+                    Architecture Review &nbsp; • &nbsp; Vulnerability Detection &nbsp; • &nbsp; Secure Implementation &nbsp; • &nbsp; System Testing
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-zinc-600 text-[10px] uppercase tracking-[0.5em] mb-16 font-bold text-center">Core Engineering Stack</h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-12 items-center justify-items-center opacity-40 grayscale contrast-200">
+                <span class="font-display text-2xl font-bold tracking-tighter italic uppercase">Rust</span>
+                <span class="font-display text-2xl font-bold uppercase">React</span>
+                <span class="font-display text-2xl font-bold uppercase tracking-widest">Node</span>
+                <span class="font-display text-2xl font-bold uppercase">Python</span>
+                <span class="font-display text-2xl font-bold uppercase tracking-tighter">Next.js</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-40 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="border border-zinc-800 p-16 md:p-32 text-center relative overflow-hidden">
+                <div class="relative z-10 space-y-12">
+                    <h2 class="font-display text-5xl md:text-8xl font-bold tracking-tighter uppercase leading-[0.9]">Start your <br> next project.</h2>
+                    <div class="flex flex-col items-center gap-6">
+                        <a href="mailto:contact@zirki.uz" class="text-2xl md:text-5xl font-display font-light hover:text-zinc-500 transition-standard border-b-2 border-zinc-900 pb-2">
+                            contact@zirki.uz
+                        </a>
+                        <p class="text-zinc-600 text-[10px] uppercase tracking-[0.4em] font-bold">Fergana District, Uzbekistan / Worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-subtle">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-6 space-y-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-5 h-5 border border-white flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 bg-white"></div>
+                    </div>
+                    <span class="font-display font-bold uppercase tracking-widest text-sm">ZIRKI GROUP</span>
+                </div>
+                <p class="text-zinc-500 text-xs max-w-xs leading-relaxed uppercase tracking-widest">
+                    Building secure digital systems through full-stack development, AI integration, and cybersecurity implementation.
+                </p>
+            </div>
+            
+            <div class="md:col-span-3 space-y-6">
+                <h5 class="text-[10px] uppercase tracking-widest text-white font-bold">Company</h5>
+                <ul class="text-zinc-500 text-xs space-y-4 uppercase tracking-widest">
+                    <li><a href="#" class="hover:text-white transition-standard">Services</a></li>
+                    <li><a href="#" class="hover:text-white transition-standard">Security</a></li>
+                    <li><a href="#" class="hover:text-white transition-standard">Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-3 space-y-6 text-right md:text-left">
+                <h5 class="text-[10px] uppercase tracking-widest text-white font-bold">Social</h5>
+                <ul class="text-zinc-500 text-xs space-y-4 uppercase tracking-widest">
+                    <li><a href="#" class="hover:text-white transition-standard">LinkedIn</a></li>
+                    <li><a href="#" class="hover:text-white transition-standard">GitHub</a></li>
+                    <li><a href="#" class="hover:text-white transition-standard">X / Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 mt-20 pt-10 border-t border-zinc-900 flex justify-between items-center text-zinc-700 text-[9px] uppercase tracking-[0.3em] font-bold">
+            <p>© 2026 Architectural Excellence.</p>
+            <div class="flex gap-8">
+                <span>Privacy</span>
+                <span>Terms</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Scroll Reveal Logic (Simple Implementation)
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-4');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
